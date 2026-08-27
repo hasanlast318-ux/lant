@@ -724,10 +724,11 @@
       const n = walker.currentNode;
       if (!originalTexts.has(n)) originalTexts.set(n, n.nodeValue);
     }
-    $$(MIXED_SEL).forEach((el) => {
-  if (!el.children.length || inPhone(el) || !originalHtml.has(el)) return;
-  if (el.querySelector('a')) return;
-});
+      $$(MIXED_SEL).forEach((el) => {
+    if (!el.children.length || inPhone(el) || originalHtml.has(el)) return;
+    if (el.querySelector('a')) return;        /* حماية روابط القائمة (الإصلاح السابق) */
+    originalHtml.set(el, el.innerHTML);       /* ✅ هذا السطر كان محذوفاً — هو سبب المشكلة */
+  });
   };
 
   /* ترجمة العناصر المقطوعة بـ span مع الحفاظ على تأثير highlight */
