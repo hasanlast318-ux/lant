@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- أكواد منع الكاش نهائياً -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+  <title>Langhub | منصة اللغة</title>
+
+  <meta name="description" content="Langhub منصة متكاملة لتعلم الإنجليزية من A1 إلى C2 عبر كورسات متخصصة، مسار ذكي، محادثة تفاعلية مع الذكاء الاصطناعي، وإشعارات يومية لحفظ الكلمات والجمل.">
+
+  <link rel="icon" href="assets/images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- شريط التنقل -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo" aria-label="Langhub">
+        <img src="assets/images/logo.png" alt="شعار Langhub">
+        <span>Langhub</span>
+      </a>
+
+      <nav aria-label="القائمة الرئيسية">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+          <li><a href="#features" class="nav-link">الميزات</a></li>
+          <li><a href="#courses" class="nav-link">الكورسات</a></li>
+          <li><a href="#smart-path" class="nav-link">المسار الذكي</a></li>
+          <li><a href="#ai-speaking" class="nav-link">المحادثة</a></li>
+          <li><a href="#notifications" class="nav-link">الإشعارات</a></li>
+          <li><a href="#levels" class="nav-link">المستويات</a></li>
+          <li><a href="#gallery" class="nav-link">معرض الصور</a></li>
+          <li><a href="#download" class="nav-link">تحميل</a></li>
+          <li><a href="#contact" class="nav-link">اتصل بنا</a></li>
+        </ul>
+      </nav>
+        <button id="lang-toggle" class="lang-toggle" type="button">EN</button>
+      <div class="hamburger" id="hamburger" aria-label="فتح القائمة" role="button" tabindex="0">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- زر الوضع الفاتح / الداكن -->
+  <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="theme-toggle" aria-label="تبديل الوضع الليلي والنهاري">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+      </span>
+    </label>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">تعلم الإنجليزية بـ<span class="highlight">تسلسل ذكي</span></h1>
+
+          <p class="hero-description">
+            Langhub منصة متكاملة تأخذك من المستوى التأسيسي (A1) إلى الاحتراف (C2).
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#download" class="btn btn-primary">
+              <i class="fas fa-mobile-screen-button"></i>
+              حمل التطبيق الآن
+            </a>
+
+            <a href="#features" class="btn btn-outline">
+              <i class="fas fa-compass"></i>
+              اكتشف المزيد
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-number" data-target="500">0</div>
+              <div class="stat-label">درس تفاعلي</div>
+            </div>
+
+            <div class="stat">
+              <div class="stat-number" data-target="5000">0</div>
+              <div class="stat-label">سؤال تدريبي</div>
+            </div>
+
+            <div class="stat">
+              <div class="stat-number" data-target="6">0</div>
+              <div class="stat-label">مستويات متقدمة</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-images-container">
+          <img src="assets/images/hero-image.png" alt="واجهة تطبيق Langhub" class="hero-main-image">
+        </div>
+      </div>
+    </section>
+
+    <!-- الميزات -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>لماذا تختار <span class="highlight">Langhub</span>؟</h2>
+          <p>منصة مصممة خصيصاً ليجعل التعلم ممتعاً</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-route"></i></div>
+            <h3>تسلسل ذكي</h3>
+            <p>دروس مرتبة حسب المستوى</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-book-open"></i></div>
+            <h3>شرح ثم اختبار</h3>
+            <p>كل درس يبدأ بشرح وافٍ</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+            <h3>تتبع التقدم</h3>
+            <p>راقب تقدمك بدقة</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-mobile-screen"></i></div>
+            <h3>تجربة ممتازة</h3>
+            <p>واجهة سهلة وبسيطة</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-infinity"></i></div>
+            <h3>دروس غير محدودة</h3>
+            <p>أكثر من 200 درس</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-arrows-rotate"></i></div>
+            <h3>تحديثات مستمرة</h3>
+            <p>محتوى جديد باستمرار</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- الكورسات المتخصصة -->
+    <section class="courses" id="courses">
+      <div class="container">
+        <div class="section-header">
+          <h2>الكورسات <span class="highlight">المتخصصة</span></h2>
+          <p>طور مهاراتك في اللغة الإنجليزية عبر كورسات مصممة بعناية</p>
+        </div>
+
+        <div class="courses-grid">
+          <article class="course-card">
+            <div class="course-icon"><i class="fas fa-book-open"></i></div>
+            <h3>كورس القراءة الاحترافية</h3>
+            <p>تعلّم قراءة النصوص الإنجليزية بسرعة وفهم أعمق.</p>
+            <ul class="course-levels">
+              <li><i class="fas fa-check-circle"></i> المستوى الأول</li>
+              <li><i class="fas fa-check-circle"></i> المستوى الثاني</li>
+              <li><i class="fas fa-check-circle"></i> المستوى الثالث</li>
+              <li><i class="fas fa-check-circle"></i> المستوى الرابع</li>
+            </ul>
+            <a href="download.html" class="btn btn-outline">ابدأ الآن</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-icon"><i class="fas fa-headphones"></i></div>
+            <h3>كورس الاستماع الذكي</h3>
+            <p>درّب أذنك على فهم المحادثات واللهجات المختلفة.</p>
+            <ul class="course-levels">
+              <li><i class="fas fa-check-circle"></i> المستوى الأول</li>
+              <li><i class="fas fa-check-circle"></i> المستوى الثاني</li>
+              <li><i class="fas fa-check-circle"></i> المستوى الثالث</li>
+              <li><i class="fas fa-check-circle"></i> المستوى الرابع</li>
+            </ul>
+            <a href="download.html" class="btn btn-outline">ابدأ الآن</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-icon"><i class="fas fa-comments"></i></div>
+            <h3>كورس المحادثة المنهجي</h3>
+            <p>تحدث بثقة في المواقف اليومية والعملية.</p>
+            <ul class="course-levels">
+              <li><i class="fas fa-check-circle"></i> المستوى الأول</li>
+              <li><i class="fas fa-check-circle"></i> المستوى الثاني</li>
+              <li><i class="fas fa-check-circle"></i> المستوى الثالث</li>
+              <li><i class="fas fa-check-circle"></i> المستوى الرابع</li>
+            </ul>
+            <a href="download.html" class="btn btn-outline">ابدأ الآن</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-icon"><i class="fas fa-pen-fancy"></i></div>
+            <h3>كورس الكتابة الإبداعية</h3>
+            <p>من الجملة البسيطة إلى الفقرة والمقال.</p>
+            <ul class="course-levels">
+              <li><i class="fas fa-check-circle"></i> المستوى الأول</li>
+              <li><i class="fas fa-check-circle"></i> المستوى الثاني</li>
+              <li><i class="fas fa-check-circle"></i> المستوى الثالث</li>
+              <li><i class="fas fa-check-circle"></i> المستوى الرابع</li>
+            </ul>
+            <a href="download.html" class="btn btn-outline">ابدأ الآن</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-icon"><i class="fas fa-spell-check"></i></div>
+            <h3>كورس القواعد الاحترافية</h3>
+            <p>افهم القواعد من داخل الجمل الحقيقية.</p>
+            <ul class="course-levels">
+              <li><i class="fas fa-check-circle"></i> المستوى الأول</li>
+              <li><i class="fas fa-check-circle"></i> المستوى الثاني</li>
+              <li><i class="fas fa-check-circle"></i> المستوى الثالث</li>
+              <li><i class="fas fa-check-circle"></i> المستوى الرابع</li>
+            </ul>
+            <a href="download.html" class="btn btn-outline">ابدأ الآن</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-icon"><i class="fas fa-language"></i></div>
+            <h3>التعلم من خلال جمل إنجليزية</h3>
+            <p>احفظ جملًا كاملة واستخرج منها المفردات والمعاني.</p>
+            <ul class="course-levels">
+              <li><i class="fas fa-check-circle"></i> المستوى الأول</li>
+              <li><i class="fas fa-check-circle"></i> المستوى الثاني</li>
+              <li><i class="fas fa-check-circle"></i> المستوى الثالث</li>
+              <li><i class="fas fa-check-circle"></i> المستوى الرابع</li>
+            </ul>
+            <a href="download.html" class="btn btn-outline">ابدأ الآن</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-icon"><i class="fas fa-lightbulb"></i></div>
+            <h3>التعلم بأفكار توعوية</h3>
+            <p>تعلم يومي قصير يعتمد على الأخطاء الشائعة والنصائح الذكية.</p>
+            <ul class="course-levels">
+              <li><i class="fas fa-check-circle"></i> المستوى الأول</li>
+              <li><i class="fas fa-check-circle"></i> المستوى الثاني</li>
+              <li><i class="fas fa-check-circle"></i> المستوى الثالث</li>
+              <li><i class="fas fa-check-circle"></i> المستوى الرابع</li>
+            </ul>
+            <a href="download.html" class="btn btn-outline">ابدأ الآن</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+<!-- المسار الذكي (محاكاة حية للتطبيق) -->
+<!-- المسار الذكي -->
+<section class="smart-path" id="smart-path">
+  <div class="container">
+    <div class="section-header">
+      <h2>المسار <span class="highlight">الذكي</span></h2>
+      <p>تجربة حية مطابقة للتطبيق: اختر قسمك، أجب على 30 سؤالاً، واستلم مسارك المخصص</p>
+    </div>
+
+    <div class="sp-showcase">
+      <div class="sp-info">
+        <div class="sp-steps">
+          <div class="sp-step">
+            <div class="sp-step-num">1</div>
+            <div class="sp-step-body">
+              <h3>اختر قسمك</h3>
+              <p>عشرة أقسام متخصصة من الأساسيات إلى الكتابة، كل قسم باختبار مستقل.</p>
+            </div>
+          </div>
+          <div class="sp-step">
+            <div class="sp-step-num">2</div>
+            <div class="sp-step-body">
+              <h3>اختبار تشخيصي من 30 سؤالاً</h3>
+              <p>5 أسئلة لكل مستوى من A1 إلى C2 لقياس دقيق لمستواك في كل موضوع.</p>
+            </div>
+          </div>
+          <div class="sp-step">
+            <div class="sp-step-num">3</div>
+            <div class="sp-step-body">
+              <h3>تحليل ذكي شامل</h3>
+              <p>تحليل المستويات، الدقة لكل موضوع، نقاط قوتك ونقاط ضعفك.</p>
+            </div>
+          </div>
+          <div class="sp-step">
+            <div class="sp-step-num">4</div>
+            <div class="sp-step-body">
+              <h3>مسار مخصص</h3>
+              <p>دروس تُرتَّب تلقائياً بدءاً من أضعف مهاراتك لتصل إلى الاحتراف بأقصر وقت.</p>
+            </div>
+          </div>
+        </div>
+        <div class="sp-cta">
+          <a href="#download" class="btn btn-primary"><i class="fas fa-rocket"></i> احصل على المسار الكامل في التطبيق</a>
+        </div>
+      </div>
+
+      <div class="sp-phone" id="sp-phone">
+        <div class="sp-phone-notch"></div>
+        <div class="sp-phone-header">
+          <h3><i class="fas fa-wand-magic-sparkles"></i> المسار الذكي</h3>
+          <span class="sp-premium">Premium</span>
+        </div>
+
+        <div class="sp-screens">
+          <!-- 1) المقدمة -->
+          <div class="sp-screen active" data-screen="intro">
+            <div class="sp-intro">
+              <div class="sp-intro-orbit"><i class="fas fa-wand-magic-sparkles"></i></div>
+              <h4>رحلتك <span class="sp-gold">الذكية</span> تبدأ الآن</h4>
+              <div class="sp-rocket">🚀</div>
+              <p>هذا المسار ليس مجرد كورس تقليدي، بل هو تجربة تعليمية مبتكرة مصممة لتصل بك إلى الاحترافية.</p>
+              <div class="sp-intro-card">
+                <i class="fas fa-rocket"></i>
+                <p>سنقوم بتحليل دقيق لنقاط قوتك وضعفك لنبني لك مساراً مخصصاً يعالج الثغرات بدقة متناهية، لكي تتقن اللغة وتصل إلى مستوى الاحتراف الذي تطمح إليه! 🎯✨</p>
+              </div>
+              <button class="sp-btn-gold" type="button" data-sp-goto="sections">ابدأ رحلتك المخصصة الآن <i class="fas fa-arrow-left"></i></button>
+            </div>
+          </div>
+
+          <!-- 2) الأقسام -->
+          <div class="sp-screen" data-screen="sections">
+            <div class="sp-sections">
+              <h4>🎯 اختر القسم لبناء مسارك المخصص</h4>
+              <p class="sp-sub">كل قسم يحتوي على اختبار مستقل وتحليل ذكي</p>
+              <div id="sp-section-list"></div>
+            </div>
+          </div>
+
+          <!-- 3) الاختبار -->
+          <div class="sp-screen" data-screen="quiz">
+            <div class="sp-quiz">
+              <div class="sp-quiz-progress"><div class="sp-quiz-bar" id="sp-quiz-bar"></div></div>
+              <div class="sp-quiz-meta">
+                <span id="sp-quiz-count">1/30</span>
+                <span class="sp-level-badge" id="sp-q-level">A1</span>
+              </div>
+              <h4 class="sp-quiz-question" id="sp-quiz-question"></h4>
+              <div class="sp-quiz-options" id="sp-quiz-options"></div>
+              <div class="sp-quiz-actions">
+                <button class="sp-btn-gold" type="button" id="sp-next-btn">التالي <i class="fas fa-arrow-left"></i></button>
+                <button class="sp-btn-ghost" type="button" id="sp-prev-btn"><i class="fas fa-arrow-right"></i> السابق</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4) النتائج -->
+          <div class="sp-screen" data-screen="results">
+            <div class="sp-results">
+              <div class="sp-result-head">
+                <p>نتائج التحليل الذكي</p>
+                <div class="sp-gauge">
+                  <svg viewBox="0 0 120 120">
+                    <circle class="sp-gauge-bg" cx="60" cy="60" r="50"></circle>
+                    <circle class="sp-gauge-fill" id="sp-gauge-fill" cx="60" cy="60" r="50"></circle>
+                  </svg>
+                  <div class="sp-gauge-text">
+                    <strong id="sp-result-level">A1</strong>
+                    <span id="sp-result-percent">0%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="sp-result-card">
+                <h5><i class="fas fa-chart-simple"></i> تحليل المستويات</h5>
+                <div id="sp-levels"></div>
+              </div>
+              <div class="sp-result-card">
+                <h5><i class="fas fa-chart-column"></i> تحليل الدقة لكل موضوع</h5>
+                <div id="sp-topics"></div>
+              </div>
+              <div class="sp-result-card">
+                <h5 class="sp-good">🏆 نقاط قوتك 💪</h5>
+                <div id="sp-strengths"></div>
+              </div>
+              <div class="sp-result-card">
+                <h5 class="sp-bad">⚠️ نقاط ضعفك ⚠️</h5>
+                <div id="sp-weaknesses"></div>
+              </div>
+              <button class="sp-btn-gold" type="button" data-sp-goto="path">🚀 إنشاء مساري المخصص <i class="fas fa-arrow-left"></i></button>
+            </div>
+          </div>
+
+          <!-- 5) المسار المخصص -->
+          <div class="sp-screen" data-screen="path">
+            <div class="sp-path">
+              <h4>🚀 مسارك التعليمي المخصص</h4>
+              <p class="sp-sub" id="sp-path-sub">لقد رتبنا لك هذه الدروس لتقوية نقاط ضعفك المسجلة.</p>
+              <div id="sp-path-list"></div>
+              <a href="#download" class="sp-btn-gold">أكمل رحلتك داخل التطبيق <i class="fas fa-arrow-left"></i></a>
+              <button class="sp-btn-ghost" type="button" id="sp-restart"><i class="fas fa-rotate-right"></i> إعادة التجربة</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="sp-analyzing" id="sp-analyzing" hidden>
+          <i class="fas fa-circle-notch fa-spin"></i>
+          <p>جاري التحليل الذكي لأدائك...</p>
+        </div>
+
+        <div class="sp-bottom-nav">
+          <button type="button" class="sp-nav-item" data-sp-app><i class="fas fa-house"></i><span>الرئيسية</span></button>
+          <button type="button" class="sp-nav-item" data-sp-app><i class="fas fa-comment-dots"></i><span>المحادثة</span></button>
+          <button type="button" class="sp-nav-item active"><i class="fas fa-brain"></i><span>المسار</span></button>
+          <button type="button" class="sp-nav-item" data-sp-app><i class="fas fa-chart-simple"></i><span>الإحصائيات</span></button>
+          <button type="button" class="sp-nav-item" data-sp-app><i class="fas fa-user"></i><span>حسابي</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==========================================
+تحدث مع الذكاء الاصطناعي
+========================================== -->
+<section class="ai-speaking" id="ai-speaking">
+  <div class="container">
+    <div class="section-header">
+      <h2>تحدث مع <span class="highlight">الذكاء الاصطناعي</span></h2>
+      <p>اختر موضوعاً، واستمع لسؤال المعلم الذكي، ثم أجب بصوتك لتحصل على تقييم فوري وتصحيح أخطائك</p>
+    </div>
+
+    <div class="ai-phone">
+      <div class="ai-phone-notch"></div>
+      <div class="ai-phone-header">
+        <i class="fas fa-arrow-right ai-back"></i>
+        <h3>المحادثة التفاعلية</h3>
+        <i class="fas fa-phone ai-call"></i>
+      </div>
+
+      <div class="ai-topics">
+        <span class="ai-topics-label">اختر موضوع المحادثة:</span>
+        <div class="ai-topics-list">
+          <button class="ai-topic-btn" type="button" data-topic="hotel">🏨 حجز فندق</button>
+          <button class="ai-topic-btn" type="button" data-topic="restaurant">🍽️ في المطعم</button>
+          <button class="ai-topic-btn" type="button" data-topic="airport">✈️ في المطار</button>
+        </div>
+      </div>
+
+      <div class="ai-chat" id="ai-chat"></div>
+
+      <div class="ai-input-bar">
+        <div class="ai-input-wrap">
+          <i class="fas fa-bolt ai-bolt"></i>
+          <input type="text" id="ai-input" placeholder="اكتب ردك بالإنجليزية هنا..." />
+        </div>
+        <button class="ai-mic" id="ai-mic-btn" type="button" aria-label="التحدث بالصوت">
+          <i class="fas fa-microphone"></i>
+        </button>
+        <button class="ai-send" id="ai-send-btn" type="button" aria-label="إرسال">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+
+    <p class="ai-hint">
+      <i class="fas fa-lightbulb"></i>
+      جرّب الآن: اختر موضوعاً بالأعلى، وسيبدأ المعلم الذكي بطرح سؤاله، ثم اضغط على زر الميكروفون وأجب بصوتك (أو اكتب ردك) لترى تقييمك وتصحيح أخطائك فوراً.
+    </p>
+  </div>
+</section>
+
+    <!-- المستويات -->
+    <section class="levels" id="levels">
+      <div class="container">
+        <div class="section-header">
+          <h2>المستويات <span class="highlight">التعليمية</span></h2>
+          <p>6 مستويات للمبتدئين حتى الاحتراف</p>
+        </div>
+
+        <div class="levels-container">
+          <article class="level-card">
+            <div class="level-icon"><i class="fas fa-seedling"></i></div>
+            <h3>A1 - التأسيسي</h3>
+            <div class="level-progress"><span class="level-lessons-count">40 درساً</span></div>
+          </article>
+
+          <article class="level-card">
+            <div class="level-icon"><i class="fas fa-book"></i></div>
+            <h3>A2 - الأساسي</h3>
+            <div class="level-progress"><span class="level-lessons-count">40 درساً</span></div>
+          </article>
+
+          <article class="level-card">
+            <div class="level-icon"><i class="fas fa-layer-group"></i></div>
+            <h3>B1 - المتوسط</h3>
+            <div class="level-progress"><span class="level-lessons-count">40 درساً</span></div>
+          </article>
+
+          <article class="level-card">
+            <div class="level-icon"><i class="fas fa-bolt"></i></div>
+            <h3>B2 - فوق المتوسط</h3>
+            <div class="level-progress"><span class="level-lessons-count">40 درساً</span></div>
+          </article>
+
+          <article class="level-card">
+            <div class="level-icon"><i class="fas fa-star"></i></div>
+            <h3>C1 - المتقدم</h3>
+            <div class="level-progress"><span class="level-lessons-count">40 درساً</span></div>
+          </article>
+
+          <article class="level-card">
+            <div class="level-icon"><i class="fas fa-crown"></i></div>
+            <h3>C2 - الاحتراف</h3>
+            <div class="level-progress"><span class="level-lessons-count">40 درساً</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- معرض الصور -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <h2>صور من <span class="highlight">التطبيق</span></h2>
+          <p>تعرف على واجهة التطبيق وتجربة المستخدم</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item"><img src="assets/images/app-screenshots/screen1.jpg" alt="لقطة شاشة من تطبيق Langhub 1" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="assets/images/app-screenshots/screen2.jpg" alt="لقطة شاشة من تطبيق Langhub 2" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="assets/images/app-screenshots/screen3.jpg" alt="لقطة شاشة من تطبيق Langhub 3" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="assets/images/app-screenshots/screen4.jpg" alt="لقطة شاشة من تطبيق Langhub 4" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="assets/images/app-screenshots/screen5.jpg" alt="لقطة شاشة من تطبيق Langhub 5" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- الإحصائيات -->
+    <section class="stats-section" id="stats">
+      <div class="container">
+        <div class="stats-wrapper">
+          <div class="stats-card">
+            <div class="stats-icon"><i class="fas fa-users"></i></div>
+            <div class="stats-number" data-target="12000">0</div>
+            <div class="stats-text">مستخدم نشط</div>
+          </div>
+
+          <div class="stats-card">
+            <div class="stats-icon"><i class="fas fa-book-open"></i></div>
+            <div class="stats-number" data-target="500">0</div>
+            <div class="stats-text">درس تعليمي</div>
+          </div>
+
+          <div class="stats-card">
+            <div class="stats-icon"><i class="fas fa-circle-question"></i></div>
+            <div class="stats-number" data-target="5000">0</div>
+            <div class="stats-text">سؤال تدريبي</div>
+          </div>
+
+          <div class="stats-card">
+            <div class="stats-icon"><i class="fas fa-star"></i></div>
+            <div class="stats-number" data-target="4.9">0</div>
+            <div class="stats-text">تقييم المستخدمين</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- التحميل -->
+    <section class="download" id="download">
+      <div class="container">
+        <div class="download-content">
+          <h2>حمل تطبيق <span class="highlight">Langhub</span> الآن</h2>
+          <p>ابدأ رحلة تعلم الإنجليزية اليوم</p>
+        </div>
+
+        <div class="download-app-screenshot">
+          <img src="assets/images/app-screenshot.png" alt="لقطة شاشة من تطبيق Langhub" loading="lazy">
+        </div>
+
+        <!-- قفل ايقونة كوكل بلي وابستور -->
+        <div class="download-buttons">
+          <a class="download-btn google-play" type="button" data-open-modal="#google-play-modal" aria-label="تحميل من Google Play">
+            <i class="fab fa-google-play"></i>
+            <span class="btn-text">
+              <span>GET IT ON</span>
+              <strong>Google Play</strong>
+            </span>
+          </a>
+
+          <a class="download-btn app-store" type="button" data-open-modal="#app-store-modal" aria-label="تحميل من App Store">
+            <i class="fab fa-apple"></i>
+            <span class="btn-text">
+              <span>Download on the</span>
+              <strong>App Store</strong>
+            </span>
+          </a>
+
+          <a href="#" class="download-btn huawei-gallery">
+              <svg class="hw-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M6.5 11.5h19l-1.6 14.2a2.2 2.2 0 0 1-2.2 2H10.3a2.2 2.2 0 0 1-2.2-2L6.5 11.5z"/>
+                <path d="M11.5 11.5V9.5a4.5 4.5 0 0 1 9 0v2"/>
+              </svg>
+              <div class="btn-text">
+                <span>EXPLORE IT ON</span>
+                <strong>AppGallery</strong>
+              </div>
+           </a>
+
+          <a href="assets/files/langhub.apk" class="download-btn direct" download aria-label="تحميل مباشر">
+            <i class="fas fa-download"></i>
+            <span class="btn-text">
+              <span>تحميل مباشر</span>
+              <strong>APK File</strong>
+            </span>
+          </a>
+        </div>
+
+        <div class="qr-code">
+          <img src="assets/images/qrcode.png" alt="رمز QR لتحميل تطبيق Langhub" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- اتصل بنا -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>تواصل <span class="highlight">معنا</span></h2>
+          <p>نحن هنا للإجابة على استفساراتك</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="info-card">
+              <i class="fab fa-facebook"></i>
+              <h3>فيسبوك</h3>
+              <p>LanghubPlatform</p>
+            </div>
+
+            <div class="info-card">
+              <i class="fab fa-instagram"></i>
+              <h3>انستغرام</h3>
+              <p>@langhub.app</p>
+            </div>
+
+            <div class="info-card">
+              <i class="fab fa-linkedin-in"></i>
+              <h3>لينكد إن</h3>
+              <p>company/langhubapp</p>
+            </div>
+
+            <div class="info-card">
+              <i class="fas fa-envelope"></i>
+              <h3>البريد الإلكتروني</h3>
+              <p>support@langhub.com</p>
+            </div>
+          </div>
+
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="الاسم الكامل" required>
+            </div>
+
+            <div class="form-group">
+              <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+            </div>
+
+            <div class="form-group">
+              <textarea name="message" rows="6" placeholder="رسالتك" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i>
+              إرسال الرسالة
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- الفوتر -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="assets/images/logo.png" alt="شعار Langhub">
+            <span>Langhub</span>
+          </div>
+          <p>منصتك المثالية لتعلم الإنجليزية.</p>
+
+          <div class="social-links">
+            <a href="https://www.facebook.com/langhubapp/" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/langhub.app" aria-label="انستغرام"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/langhubapp/" aria-label="لينكد إن"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>روابط سريعة</h3>
+          <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#features">الميزات</a></li>
+            <li><a href="#levels">المستويات</a></li>
+            <li><a href="#gallery">معرض الصور</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>المستويات</h3>
+          <ul>
+            <li><a href="#levels">A1 - التأسيسي</a></li>
+            <li><a href="#levels">A2 - الأساسي</a></li>
+            <li><a href="#levels">B1 - المتوسط</a></li>
+            <li><a href="#levels">B2 - فوق المتوسط</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>النشرة البريدية</h3>
+          <form id="newsletter-form" class="newsletter">
+            <input type="email" placeholder="بريدك الإلكتروني" required>
+            <button type="submit" aria-label="اشترك في النشرة البريدية">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © <span id="year">2026</span> Langhub | منصة اللغة. جميع الحقوق محفوظة
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal App Store -->
+  <div class="modal" id="app-store-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+
+    <div class="modal-card">
+      <button class="modal-close" type="button" data-close-modal aria-label="إغلاق">
+        <i class="fas fa-xmark"></i>
+      </button>
+
+      <h3>قريبًا على App Store</h3>
+      <p>نحن نعمل بجد لتوفير نسخة لأجهزة iOS</p>
+      <p>قيد التطوير حالياً</p>
+
+      <button class="btn btn-primary" type="button" data-close-modal>حسناً</button>
+    </div>
+  </div>
+
+  <!-- Modal Google Play -->
+  <div class="modal" id="google-play-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+
+    <div class="modal-card">
+      <button class="modal-close" type="button" data-close-modal aria-label="إغلاق">
+        <i class="fas fa-xmark"></i>
+      </button>
+
+      <h3>قريبًا على Google Play</h3>
+      <p>التطبيق متوفر على أجهزة Android ويمكنك تحميله من HUAWEI AppGallery</p>
+      <p>نعمل على توفيرة في متجر Google Play قريباً</p>
+
+      <button class="btn btn-primary" type="button" data-close-modal>حسناً</button>
+    </div>
+  </div>
+
+
+  <!-- نافذة: القسم متاح داخل التطبيق فقط -->
+<div class="modal" id="sp-download-modal">
+  <div class="modal-backdrop" data-close-modal></div>
+  <div class="modal-card">
+    <button class="modal-close" type="button" data-close-modal><i class="fas fa-xmark"></i></button>
+    <div style="font-size:46px;margin-bottom:12px;">📲</div>
+    <h3>هذا القسم متاح داخل التطبيق</h3>
+    <p>يمكنك اختبار هذا القسم عبر تطبيق Langhub — حمّله الآن واختر طريقة التحميل المناسبة لك.</p>
+    <button class="btn btn-primary" type="button" id="sp-go-download"><i class="fas fa-download"></i> تحميل التطبيق</button>
+  </div>
+</div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <script src="assets/js/smart-path.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+</body>
+</html>

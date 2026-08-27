@@ -1,0 +1,482 @@
+/* شاشات كبيرة جداً (4K) */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1600px;
+  }
+
+  .hero-title {
+    font-size: 64px;
+  }
+
+  .hero-description {
+    font-size: 20px;
+  }
+
+  .section-header h2 {
+    font-size: 48px;
+  }
+
+  .features-grid,
+  .levels-container,
+  .courses-grid {
+    gap: 30px;
+  }
+
+  .stats-number {
+    font-size: 64px;
+  }
+}
+
+/* لابتوب */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1100px;
+  }
+
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .smart-path-grid,
+  .notifications-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* تابلت */
+@media (max-width: 992px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-title {
+    font-size: 38px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .hero-main-image {
+    max-width: 50%;
+    margin-right: 0;
+  }
+
+  .app-screenshot-feature img {
+    max-width: 50%;
+  }
+
+  .download-app-screenshot img {
+    max-width: 50%;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .smart-path-grid,
+  .notifications-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-item {
+    max-width: 30%;
+  }
+}
+
+/* الأجهزة اللوحية */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 30px !important;
+  }
+
+  .footer-content .footer-section:first-child {
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  .footer-logo {
+    justify-content: center !important;
+  }
+
+  .footer-section h3::after {
+    right: 50%;
+    transform: translateX(50%);
+    left: auto;
+  }
+
+  .footer-section:nth-child(2),
+  .footer-section:nth-child(3) {
+    text-align: center;
+  }
+
+  .footer-section:nth-child(4) {
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  .newsletter {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+/* جوال */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--bg-card-dark);
+    width: 100%;
+    text-align: center;
+    transition: var(--transition);
+    padding: 25px 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  body.light-mode .nav-menu {
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu li {
+    margin: 15px 0;
+  }
+
+  .hero-title {
+    font-size: 32px;
+    min-height: 90px;
+  }
+
+  .hero-main-image {
+    max-width: 60%;
+    margin-right: 0;
+  }
+
+  .app-screenshot-feature img {
+    max-width: 70%;
+  }
+
+  .section-header h2 {
+    font-size: 28px;
+  }
+
+  .features-grid,
+  .levels-container,
+  .courses-grid,
+  .smart-path-grid,
+  .notifications-grid,
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .stats-number {
+    font-size: 36px;
+  }
+
+  .download-buttons {
+    gap: 20px;
+  }
+
+  .download-btn {
+    padding: 12px 25px;
+    min-width: 200px;
+  }
+
+  .download-btn i {
+    font-size: 28px;
+  }
+
+  .btn-text strong {
+    font-size: 16px;
+  }
+
+  .btn-text span {
+    font-size: 10px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-logo {
+    justify-content: center !important;
+    flex-direction: row !important;
+  }
+
+  .footer-section h3::after {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .newsletter {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+
+  .gallery-item {
+    max-width: 42%;
+  }
+
+  .daily-word {
+    font-size: 36px;
+  }
+
+  .ai-phone {
+    height: 740px;
+  }
+
+  .contact-form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: auto;
+    min-width: 150px;
+  }
+}
+
+/* جوال صغير */
+@media (max-width: 550px) {
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 225px;
+    justify-content: center;
+  }
+
+  .hero-stats {
+    gap: 20px;
+  }
+
+  .stat-number {
+    font-size: 24px;
+  }
+
+  .hero-main-image {
+    max-width: 70%;
+  }
+
+  .app-screenshot-feature img {
+    max-width: 80%;
+  }
+
+  .download-app-screenshot img {
+    max-width: 70%;
+  }
+
+  .stats-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .download-btn {
+    padding: 10px 20px;
+    min-width: 230px;
+    gap: 10px;
+  }
+
+  .download-btn i {
+    font-size: 24px;
+  }
+
+  .btn-text strong {
+    font-size: 14px;
+  }
+
+  .gallery-item {
+    max-width: 65%;
+  }
+
+  .daily-word {
+    font-size: 30px;
+  }
+
+  .eval-metrics {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+  }
+
+  .m-value {
+    font-size: 13px;
+  }
+}
+
+/* شاشات صغيرة جداً */
+@media (max-width: 320px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .download-btn {
+    width: 200px;
+    padding: 10px 20px;
+  }
+
+  .qr-code img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* الشاشات الأفقية للجوال */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding: 100px 0 60px;
+  }
+
+  .hero-content {
+    gap: 30px;
+  }
+}
+
+/* الطباعة */
+@media print {
+  .navbar,
+  .theme-switch-wrapper,
+  .download-buttons,
+  .qr-code,
+  .contact-form,
+  .newsletter,
+  .social-links,
+  .ai-input-bar,
+  .modal,
+  .toast {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .feature-card,
+  .level-card,
+  .course-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+
+/* ==========================================
+شكل الايفون في المحادثة التفاعلية
+========================================== */
+@media (max-width: 768px) {
+  .ai-phone {
+    width: min(390px, 100%);
+    border-radius: 48px;
+    padding: 8px;
+  }
+
+  .ai-screen {
+    border-radius: 40px;
+  }
+
+  .ai-dynamic-island {
+    width: 96px;
+    height: 26px;
+  }
+
+  .ai-statusbar {
+    padding: 13px 20px 4px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .ai-phone {
+    border-radius: 42px;
+  }
+
+  .ai-dynamic-island {
+    width: 90px;
+    height: 24px;
+  }
+
+  .ai-statusbar {
+    font-size: 11px;
+    padding: 12px 18px 4px;
+  }
+
+  .ai-phone-header h3 {
+    font-size: 15px;
+  }
+
+  .eval-metrics {
+    gap: 4px;
+  }
+
+  .m-value {
+    font-size: 13px;
+  }
+}

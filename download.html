@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>تحميل Langhub | منصة اللغة</title>
+
+  <meta name="description" content="حمّل تطبيق Langhub لتعلم الإنجليزية عبر كورسات متخصصة ومسار ذكي ومحادثة صوتية مع الذكاء الاصطناعي.">
+
+  <link rel="icon" href="assets/images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="Langhub">
+        <img src="assets/images/logo.png" alt="شعار Langhub">
+        <span>Langhub</span>
+      </a>
+
+      <nav aria-label="قائمة التحميل">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+          <li><a href="index.html#features" class="nav-link">الميزات</a></li>
+          <li><a href="index.html#courses" class="nav-link">الكورسات</a></li>
+          <li><a href="download.html" class="nav-link active">تحميل</a></li>
+          <li><a href="index.html#contact" class="nav-link">اتصل بنا</a></li>
+        </ul>
+      </nav>
+
+      <div class="hamburger" id="hamburger" aria-label="فتح القائمة" role="button" tabindex="0">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="theme-toggle" aria-label="تبديل الوضع الليلي والنهاري">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+      </span>
+    </label>
+  </div>
+
+  <main class="download-page">
+    <section class="download-hero">
+      <div class="container">
+        <div class="section-header">
+          <h2>تحميل تطبيق Langhub</h2>
+          <p>اختر نظام التشغيل الخاص بك للبدء</p>
+        </div>
+
+        <div class="download-app-screenshot">
+          <img src="assets/images/app-screenshot.png" alt="لقطة شاشة من تطبيق Langhub">
+        </div>
+
+        <div class="download-buttons">
+          <a href="#" class="download-btn google-play" aria-label="تحميل من Google Play">
+            <i class="fab fa-google-play"></i>
+            <span class="btn-text">
+              <span>GET IT ON</span>
+              <strong>Google Play</strong>
+            </span>
+          </a>
+
+          <button class="download-btn app-store" type="button" data-open-modal="#app-store-modal" aria-label="تحميل من App Store">
+            <i class="fab fa-apple"></i>
+            <span class="btn-text">
+              <span>Download on the</span>
+              <strong>App Store</strong>
+            </span>
+          </button>
+
+          <a href="assets/files/langhub.apk" class="download-btn direct" download aria-label="تحميل مباشر">
+            <i class="fas fa-download"></i>
+            <span class="btn-text">
+              <span>تحميل مباشر</span>
+              <strong>APK File</strong>
+            </span>
+          </a>
+        </div>
+
+        <div class="qr-code">
+          <img src="assets/images/qrcode.png" alt="امسح الباركود لفتح هذه الصفحة على هاتفك">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer footer-simple">
+    <div class="container">
+      <div class="footer-bottom">
+        © <span id="year">2026</span> Langhub | منصة اللغة. جميع الحقوق محفوظة
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal App Store -->
+  <div class="modal" id="app-store-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+
+    <div class="modal-card">
+      <button class="modal-close" type="button" data-close-modal aria-label="إغلاق">
+        <i class="fas fa-xmark"></i>
+      </button>
+
+      <h3>قريبًا على App Store</h3>
+      <p>نحن نعمل بجد لتوفير نسخة لأجهزة iOS.</p>
+
+      <button class="btn btn-primary" type="button" data-close-modal>
+        حسنًا
+      </button>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

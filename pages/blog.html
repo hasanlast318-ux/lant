@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المدونة | Langhub - منصة اللغة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <style>
+        .blog-header {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            padding: 120px 0 60px;
+            text-align: center;
+            color: white;
+        }
+        .blog-header h1 { font-size: 48px; margin-bottom: 20px; }
+        .blog-header p { font-size: 18px; opacity: 0.95; }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            padding: 60px 0;
+        }
+        .blog-card {
+            background: var(--bg-card-dark);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid var(--border-dark);
+        }
+        .blog-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+        }
+        .blog-img {
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .blog-img i { font-size: 60px; color: white; }
+        .blog-content { padding: 25px; }
+        .blog-date { color: var(--primary); font-size: 14px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+        .blog-title { font-size: 20px; margin-bottom: 15px; }
+        .blog-excerpt { color: var(--text-gray-dark); margin-bottom: 20px; line-height: 1.7; }
+        .read-more { color: var(--primary); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; transition: var(--transition); }
+        .read-more:hover { gap: 12px; }
+        body.light-mode .blog-card { background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+        @media (max-width: 768px) { .blog-header h1 { font-size: 32px; } .blog-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo"><i class="fas fa-language"></i><span>Langhub</span><span class="logo-sub">| منصة اللغة</span></div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">الرئيسية</a></li>
+                    <li><a href="../index.html#features">الميزات</a></li>
+                    <li><a href="../index.html#levels">المستويات</a></li>
+                    <li><a href="blog.html" class="active">المدونة</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+                <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="blog-header">
+        <div class="container">
+            <h1>📝 مدونة Langhub</h1>
+            <p>نصائح وحيل لتعلم الإنجليزية بشكل أسرع وأفضل</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="blog-grid">
+            <div class="blog-card">
+                <div class="blog-img"><i class="fas fa-book"></i></div>
+                <div class="blog-content">
+                    <div class="blog-date"><i class="far fa-calendar-alt"></i> 15 مايو 2024</div>
+                    <h3 class="blog-title">10 نصائح لتحسين النطق في الإنجليزية</h3>
+                    <p class="blog-excerpt">تعلم كيفية تحسين نطقك للحروف والكلمات الإنجليزية بسهولة من خلال تمارين بسيطة وفعالة...</p>
+                    <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-img"><i class="fas fa-clock"></i></div>
+                <div class="blog-content">
+                    <div class="blog-date"><i class="far fa-calendar-alt"></i> 10 مايو 2024</div>
+                    <h3 class="blog-title">كيف تتعلم الإنجليزية في 30 دقيقة يومياً</h3>
+                    <p class="blog-excerpt">خطة يومية بسيطة لتحسين مستواك في الإنجليزية دون الحاجة إلى ساعات طويلة من المذاكرة...</p>
+                    <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-img"><i class="fas fa-mobile-alt"></i></div>
+                <div class="blog-content">
+                    <div class="blog-date"><i class="far fa-calendar-alt"></i> 5 مايو 2024</div>
+                    <h3 class="blog-title">أفضل 5 تطبيقات لتعلم الإنجليزية</h3>
+                    <p class="blog-excerpt">مراجعة لأفضل التطبيقات التي تساعدك في رحلة التعلم وتناسب جميع المستويات...</p>
+                    <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo"><i class="fas fa-language"></i><span>Langhub</span></div>
+                    <p>منصتك المثالية لتعلم الإنجليزية بطريقة ذكية وممتعة.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section"><h3>روابط سريعة</h3><ul><li><a href="../index.html">الرئيسية</a></li><li><a href="../index.html#features">الميزات</a></li><li><a href="../index.html#levels">المستويات</a></li></ul></div>
+                <div class="footer-section"><h3>المستويات</h3><ul><li><a href="#">A1 - التأسيسي</a></li><li><a href="#">B1 - المتوسط</a></li><li><a href="#">C1 - المتقدم</a></li></ul></div>
+                <div class="footer-section"><h3>النشرة البريدية</h3><p>اشترك لتصلك آخر التحديثات</p><div class="newsletter"><input type="email" placeholder="بريدك الإلكتروني"><button><i class="fas fa-paper-plane"></i></button></div></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2024 Langhub | منصة اللغة. جميع الحقوق محفوظة</p></div>
+        </div>
+    </footer>
+    <div class="theme-switch-wrapper"><label class="theme-switch" for="checkbox"><input type="checkbox" id="checkbox"><div class="slider round"><i class="fas fa-sun"></i><i class="fas fa-moon"></i></div></label></div>
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+</body>
+</html>
