@@ -1731,6 +1731,7 @@ Contact
 .info-card p {
   font-size: 14px;
   color: var(--text-gray-dark);
+  direction: ltr;
 }
 
 .contact-form .form-group {
@@ -1961,12 +1962,10 @@ Modal
 /* محاذاة نص النوافذ المنبثقة حسب اتجاه اللغة */
 .modal-card h3,
 .modal-card p {
-  text-align: right;
   direction: rtl;
 }
 body.lang-en .modal-card h3,
 body.lang-en .modal-card p {
-  text-align: left;
   direction: ltr;
 }
 
