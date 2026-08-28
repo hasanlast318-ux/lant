@@ -678,6 +678,8 @@
     'فيسبوك': 'Facebook',
     'انستغرام': 'Instagram',
     'لينكد إن': 'LinkedIn',
+    'تيك توك': 'TikTok',
+    'ثريدز': 'Threads',
     'البريد الإلكتروني': 'Email',
     'قريبًا على App Store': 'Coming soon on App Store',
     'قيد التطوير حالياً': 'Currently under development',
