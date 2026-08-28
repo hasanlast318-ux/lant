@@ -285,11 +285,11 @@ body.light-mode .hamburger .bar {
 Theme switch
 ========================================== */
 .theme-switch-wrapper {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  z-index: 1200;
+  position: static;
+  display: flex;
+  align-items: center;
 }
+
 
 .theme-switch {
   display: inline-block;
@@ -297,56 +297,54 @@ Theme switch
   position: relative;
   width: 70px;
 }
-
 .theme-switch input {
   display: none;
 }
-
 .slider {
-  background-color: #334155;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
   position: absolute;
-  right: 0;
   top: 0;
-  transition: .4s;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #334155;
   border-radius: 34px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 12px;
+  cursor: pointer;
+  transition: background-color 0.4s;
 }
-
 body.light-mode .slider {
   background-color: #cbd5e1;
 }
-
 .slider i {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
   font-size: 15px;
   z-index: 1;
   color: #f1f5f9;
+  transition: color 0.4s;
 }
-
 body.light-mode .slider i {
   color: #0f172a;
 }
-
+/* تثبيت مكان الأيقونات فعلياً: الشمس يسار والهلال يمين (لا يتأثر باتجاه الصفحة) */
+.slider .fa-sun  { left: 17px; }
+.slider .fa-moon { left: 53px; }
+/* الدائرة البرتقالية: وضعها الافتراضي فوق الهلال = الوضع الليلي */
 .slider:before {
-  background-color: var(--primary);
-  bottom: 4px;
   content: "";
-  height: 26px;
-  left: 4px;
   position: absolute;
-  transition: .4s;
+  top: 4px;
+  left: 40px;
   width: 26px;
+  height: 26px;
+  background-color: var(--primary);
   border-radius: 50%;
   z-index: 0;
+  transition: transform 0.4s;
 }
-
+/* عند اختيار الوضع النهاري (checked) تتحرك الدائرة إلى الشمس */
 input:checked + .slider:before {
-  transform: translateX(36px);
+  transform: translateX(-36px);
 }
 
 /* ==========================================
@@ -2429,4 +2427,16 @@ body.lang-en .modal-large { text-align: left; }
 body.lang-en .hero-main-image { margin-right: 0; margin-left: 0%; }
 body.lang-en .ai-hint i { margin-left: 0; margin-right: 6px; }
 body.lang-en .typing-cursor { margin-right: 0; margin-left: 4px; }
-body.lang-en .theme-switch-wrapper { left: auto; right: 20px; }
+
+/* ===== تجاوب زر الوضع الليلي/النهاري داخل شريط التنقل ===== */
+@media (max-width: 550px) {
+  .nav-container { gap: 12px; }
+}
+@media (max-width: 400px) {
+  .theme-switch { width: 52px; height: 28px; }
+  .slider { padding: 0 8px; border-radius: 28px; }
+  .slider i { font-size: 11px; }
+  .slider:before { width: 20px; height: 20px; }
+  input:checked + .slider:before { transform: translateX(24px); }
+  .lang-toggle { padding: 5px 12px; font-size: 12px; }
+}
