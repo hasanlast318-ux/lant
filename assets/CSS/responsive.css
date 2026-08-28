@@ -158,6 +158,7 @@
   .nav-menu {
     position: fixed;
     left: -100%;
+    visibility: hidden;
     top: 70px;
     gap: 0;
     flex-direction: column;
@@ -171,8 +172,9 @@
   }
 
   .nav-menu.active {
-    left: 0;
-  }
+left: 0;
+visibility: visible;
+}
 
   body.light-mode .nav-menu {
     background-color: white;
@@ -502,6 +504,7 @@
   .nav-menu {
     position: fixed;
     left: -100%;
+    visibility: hidden;
     top: 70px;
     gap: 0;
     flex-direction: column;
@@ -520,3 +523,4 @@
   }
   .nav-menu li { margin: 15px 0; }
 }
+
