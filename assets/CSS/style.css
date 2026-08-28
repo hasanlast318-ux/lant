@@ -10,7 +10,9 @@ Reset
 }
 
 html {
-  scroll-behavior: smooth;
+scroll-behavior: smooth;
+overflow-x: hidden;
+overflow-x: clip;
 }
 
 :root {
@@ -159,9 +161,11 @@ section[id] {
 Navbar
 ========================================== */
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+width: 100%;
   background: rgba(15, 23, 42, 0.95);
   backdrop-filter: blur(10px);
   z-index: 1000;
@@ -251,8 +255,11 @@ body.light-mode .navbar.scrolled {
 }
 
 .hamburger {
-  display: none;
-  cursor: pointer;
+display: none;
+cursor: pointer;
+flex-shrink: 0;
+position: relative;
+z-index: 1001;
 }
 
 .bar {
