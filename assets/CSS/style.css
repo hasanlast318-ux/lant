@@ -2350,7 +2350,7 @@ margin: 0 auto;                 /* ✅ تأكيد إضافي للتمركز */
 width: min(375px, 90vw);
 height: calc(min(375px, 90vw) * 2.08);   /* نفس نسبة هاتف المحادثة */
 }
-.sp-screen { padding: 14px 10px; }
+.sp-screen { padding: 0 10px; }
 .sp-section-top { flex-wrap: wrap; }     /* يمنع سحق عنوان القسم */
 .sp-status { white-space: normal; }      /* يمنع بروز نص "متاح في التطبيق" */
 .sp-steps { gap: 12px; }
@@ -2358,6 +2358,22 @@ height: calc(min(375px, 90vw) * 2.08);   /* نفس نسبة هاتف المحا�
 .sp-step-num { width: 36px; height: 36px; font-size: 16px; }
 .sp-cta { flex-direction: column; align-items: stretch; }
 .sp-cta .btn { width: 100%; text-align: center;}            /* أزرار ممتدة أنظف من أزرار متزاحمة */
+}
+
+/* ✅ الشاشات الضيقة جداً فقط (الشاشة المغلقة لـ Galaxy Z Fold 5 وما شابه) */
+@media (max-width: 350px) {
+.sp-intro { gap: 10px; }
+.sp-intro-orbit { width: 93px; height: 93px; }
+.sp-intro-orbit::before { inset: 12px; }
+.sp-intro-orbit i { font-size: 20px; }
+.sp-screen { padding: 10px 8px; }
+.sp-section-icon { width: 44px; height: 44px; }
+.sp-section-icon i { font-size: 18px; }
+.sp-section-title strong { font-size: 13px; }
+.sp-btn-gold { font-size: 13px; padding: 12px; }
+.sp-lesson-num { width: 32px; height: 32px; }
+.sp-lesson-title { font-size: 12px; }
+.sp-lesson-status { padding: 4px 8px; }
 }
 
 /* تفاصيل القسم القابلة للفتح */
