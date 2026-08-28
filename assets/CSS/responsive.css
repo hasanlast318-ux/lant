@@ -151,9 +151,11 @@
 
 /* جوال */
 @media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
+.ai-phone {
+width: min(390px, 100%);
+border-radius: 48px;
+padding: 0;
+}
 
   .nav-menu {
     position: fixed;
@@ -279,8 +281,8 @@ visibility: visible;
   }
 
   .ai-phone {
-    height: 740px;
-  }
+height: auto;
+}
 
   .contact-form button {
     display: flex;
@@ -434,11 +436,11 @@ visibility: visible;
 شكل الايفون في المحادثة التفاعلية
 ========================================== */
 @media (max-width: 768px) {
-  .ai-phone {
-    width: min(390px, 100%);
-    border-radius: 48px;
-    padding: 8px;
-  }
+.ai-phone {
+width: min(390px, 100%);
+border-radius: 48px;
+padding: 0;
+}
 
   .ai-screen {
     border-radius: 40px;
@@ -456,9 +458,33 @@ visibility: visible;
 }
 
 @media (max-width: 400px) {
-  .ai-phone {
-    border-radius: 42px;
-  }
+.ai-phone {
+border-radius: 42px;
+}
+.ai-input-bar {
+gap: 8px;
+padding: 10px;
+}
+.ai-send {
+width: 46px;
+height: 46px;
+}
+.ai-mic {
+width: 42px;
+height: 42px;
+}
+.ai-input-bar {
+gap: 8px;
+padding: 10px 10px;
+}
+.ai-send {
+width: 46px;
+height: 46px;
+}
+.ai-mic {
+width: 42px;
+height: 42px;
+}
 
   .ai-dynamic-island {
     width: 90px;
