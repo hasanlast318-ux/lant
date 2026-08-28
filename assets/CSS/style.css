@@ -1168,20 +1168,24 @@ AI Phone Chat - بشكل هاتف حقيقي
 }
 
 .ai-input-bar {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 17px 14px;
-  margin: -12px;
-  background: #1e293b;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 12px 14px;
+margin: 0;            /* ✅ إزالة الهامش السالب الذي يزحزح الشريط لليسار ويقصّ زر الإرسال */
+width: 100%;
+flex-shrink: 0;
+background: #1e293b;
+border-top: 1px solid rgba(255, 255, 255, 0.06);
+border-radius: 0 0 34px 34px;
 }
 
 .ai-input-wrap {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+flex: 1;
+min-width: 0;              /* ✅ يسمح للحقل بالانكماش فلا يُقصّ زر الإرسال */
+display: flex;
+align-items: center;
+gap: 8px;
   background: #0b1220;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 999px;
@@ -1189,7 +1193,9 @@ AI Phone Chat - بشكل هاتف حقيقي
 }
 
 .ai-input-wrap input {
-  flex: 1;
+flex: 1;
+min-width: 0;
+width: 100%;
   background: transparent;
   border: none;
   outline: none;
@@ -1249,10 +1255,16 @@ AI Phone Chat - بشكل هاتف حقيقي
   cursor: not-allowed;
 }
 
+.ai-send,
+.ai-mic {
+display: flex;
+align-items: center;
+justify-content: center;
+}
 .ai-send i {
-  transform: rotate(273deg);
-  font-size: 21px;
-  padding: 16px;
+transform: rotate(273deg);
+font-size: 21px;
+padding: 0;
 }
 
 .ai-hint {
@@ -2318,9 +2330,34 @@ transition: var(--transition);
 .sp-nav-item.active { color: var(--primary); background: rgba(245,158,11,0.12); }
 
 @media (max-width: 992px) {
-.sp-showcase { grid-template-columns: 1fr; }
-.sp-info { order: 2; }
-.sp-phone { order: 1; height: 740px; }
+.sp-showcase {
+grid-template-columns: 1fr;
+gap: 35px;
+justify-items: center;          /* ✅ توسيط أبناء الشبكة ومنهم الهاتف */
+}
+.sp-info { order: 2; width: 100%; }
+.sp-phone {
+order: 1;
+height: 740px;
+justify-self: center;           /* ✅ إجبار الهاتف على التمركز */
+margin: 0 auto;                 /* ✅ تأكيد إضافي للتمركز */
+}
+}
+
+/* ✅ شاشات صغيرة: هاتف متناسق في الوسط والمحتوى أسفله مرتّب */
+@media (max-width: 480px) {
+.sp-phone {
+width: min(375px, 90vw);
+height: calc(min(375px, 90vw) * 2.08);   /* نفس نسبة هاتف المحادثة */
+}
+.sp-screen { padding: 14px 10px; }
+.sp-section-top { flex-wrap: wrap; }     /* يمنع سحق عنوان القسم */
+.sp-status { white-space: normal; }      /* يمنع بروز نص "متاح في التطبيق" */
+.sp-steps { gap: 12px; }
+.sp-step { padding: 14px; gap: 12px; }
+.sp-step-num { width: 36px; height: 36px; font-size: 16px; }
+.sp-cta { flex-direction: column; align-items: stretch; }
+.sp-cta .btn { width: 100%; text-align: center;}            /* أزرار ممتدة أنظف من أزرار متزاحمة */
 }
 
 /* تفاصيل القسم القابلة للفتح */
@@ -2343,12 +2380,15 @@ transition: var(--transition);
 /* ==========================================
 توحيد أبعاد هاتف المحادثة مع هاتف المسار الذكي
 ========================================== */
-.ai-phone {
-  position: relative;
-  width: 375px;
-  max-width: 100%;
-  height: 780px;
-  margin: 0 auto;
+  .ai-phone {
+position: relative;
+width: min(375px, 100%);
+max-width: 100%;
+height: auto;
+aspect-ratio: 375 / 780;   /* ✅ نسبة آيفون حقيقية ثابتة في كل الشاشات */
+margin: 0 auto;
+margin-inline: auto;
+justify-self: center;
   background: #0b1220;
   border: 10px solid #1e293b;
   border-radius: 44px;
@@ -2360,17 +2400,17 @@ transition: var(--transition);
 
 /* نفس سلوك هاتف المسار الذكي على الشاشات المتوسطة */
 @media (max-width: 992px) {
-  .ai-phone {
-    height: 740px;
-  }
+.ai-phone {
+height: auto;
+}
 }
 
 /* على الجوال: نحافظ على نسبة الآيفون (الطول ≈ ضعف العرض) حتى لا يصبح عريضاً وقصيراً */
 @media (max-width: 480px) {
-  .ai-phone {
-    width: min(375px, 90vw);
-    height: calc(min(375px, 90vw) * 2.08);
-  }
+.ai-phone {
+width: min(375px, 92vw);
+height: auto;
+}
 }
 
 /* ==========================================
